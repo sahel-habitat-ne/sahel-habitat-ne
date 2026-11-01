@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sahel Habitat Immobilier — Maisons, terrains et locations à Niamey</title>
+<meta name="description" content="Agence immobilière à Niamey : maisons, villas, appartements, bureaux et terrains à vendre ou à louer. Contactez-nous par WhatsApp ou par téléphone.">
+<meta property="og:title" content="Sahel Habitat Immobilier — Niamey">
+<meta property="og:description" content="Biens à vendre et à louer à Niamey. Contact direct par WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#f3eee4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3eee4;--p2:#e8dfcd;--ink:#171b2e;--mut:#5c5a55;--ac:#b4532a;--ind:#243b6b;--ln:#cfc5b2;--wa:#1d7a47;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1325;--p2:#171c34;--ink:#efe8d8;--mut:#a9a79f;--ac:#e0804f;--ind:#9bb0e3;--ln:#2b3250;--wa:#2fa563}}
+:root[data-theme="dark"]{--paper:#0f1325;--p2:#171c34;--ink:#efe8d8;--mut:#a9a79f;--ac:#e0804f;--ind:#9bb0e3;--ln:#2b3250;--wa:#2fa563}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:40}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.12;letter-spacing:-.015em;margin:0}
+button,select{font:inherit;color:inherit}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.strip{background:var(--ink);color:var(--paper);font-size:12.5px}
+.strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:7px;padding-bottom:7px}
+.strip button{background:none;border:1px solid currentColor;color:inherit;border-radius:2px;padding:2px 10px;cursor:pointer;font-size:12px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--paper);border-bottom:1px solid var(--ln)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:19px;letter-spacing:-.01em}
+nav{display:flex;gap:22px;font-size:14px;font-weight:600}
+nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--ac)}
+@media (max-width:760px){nav{order:3;width:100%;overflow-x:auto;gap:20px;padding-bottom:2px}}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:12px 20px;font-weight:700;font-size:14.5px;text-decoration:none;border-radius:2px;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ac{background:var(--ac);border-color:var(--ac);color:#fff}
+.btn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn.out{background:transparent;color:var(--ink)}
+.btn.sm{padding:8px 14px;font-size:13.5px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;padding:56px 0 40px;align-items:center}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:28px;padding-top:34px}}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin:0 0 14px}
+.hero h1{font-size:clamp(36px,6.4vw,68px)}
+.hero h1 span{color:var(--ind)}
+.hero p.lead{color:var(--mut);max-width:520px;margin:18px 0 26px;font-size:17px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.feat{margin:0;position:relative}
+.feat .img{aspect-ratio:4/5}
+.feat figcaption{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding-top:10px;border-top:1px solid var(--ink);margin-top:10px;font-size:14px}
+.feat figcaption b{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:18px}
+.img{position:relative;background:var(--p2);overflow:hidden}
+.img img{width:100%;height:100%;object-fit:cover;display:block}
+.img svg{width:100%;height:100%;display:block;color:var(--ink);opacity:.6}
+.cap{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--mut);letter-spacing:.04em}
+.flag{position:absolute;left:0;top:0;background:var(--ink);color:var(--paper);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;font-weight:700}
+.zones{border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:16px 0;display:flex;gap:6px 22px;flex-wrap:wrap;align-items:baseline}
+.zones span{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.zones button{background:none;border:0;border-bottom:1px solid var(--ln);cursor:pointer;padding:2px 0;font-weight:600}
+.zones button:hover{border-color:var(--ac);color:var(--ac)}
+section{padding:56px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sh h2{font-size:clamp(28px,4.4vw,42px)}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:14px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ln)}
+.seg{display:flex}
+.seg button{border:1px solid var(--ink);background:transparent;padding:8px 16px;font-weight:600;cursor:pointer;margin-left:-1px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+select{background:transparent;border:0;border-bottom:1px solid var(--ink);padding:8px 22px 8px 2px;border-radius:0;cursor:pointer;max-width:100%}
+select option{color:#171b2e;background:#fff}
+.count{margin-left:auto;color:var(--mut);font-size:14px}
+.row{display:grid;grid-template-columns:300px 1fr;gap:26px;padding:26px 0;border-bottom:1px solid var(--ln)}
+@media (max-width:700px){.row{grid-template-columns:1fr;gap:14px}}
+.row .img{aspect-ratio:4/3}
+.row .info{display:flex;flex-direction:column;gap:6px}
+.meta{margin:0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.row h3{font-size:24px;cursor:pointer}
+.row h3:hover{color:var(--ac)}
+.where{margin:0;color:var(--ind);font-weight:600;font-size:15px}
+.sp{margin:0;color:var(--mut);font-size:14.5px}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:10px}
+.price{font-family:Fraunces,Georgia,serif;font-size:26px;font-weight:500}
+.price small{font-family:Manrope,sans-serif;font-size:13px;color:var(--mut)}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.empty{padding:40px 0;color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:26px}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.steps div{border-top:1px solid var(--ink);padding-top:14px}
+.steps b{font-family:Fraunces,Georgia,serif;font-size:34px;color:var(--ac);font-weight:500}
+.steps h3{font-size:20px;margin:4px 0 6px}
+.steps p{margin:0;color:var(--mut);font-size:15px}
+.band{background:var(--p2)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:20px}}
+.about p{color:var(--mut);margin:0 0 12px}
+address{font-style:normal;display:grid;gap:14px}
+address div{border-top:1px solid var(--ln);padding-top:10px}
+address small{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+footer{background:var(--ink);color:var(--paper);padding:28px 0 36px;font-size:13.5px}
+footer p{margin:4px 0;opacity:.8}
+dialog{border:0;padding:0;width:min(940px,96vw);max-height:92vh;overflow:auto;background:var(--paper);color:var(--ink);border-radius:2px}
+dialog::backdrop{background:rgba(10,13,28,.7)}
+.dd{display:grid;grid-template-columns:1.1fr .9fr}
+@media (max-width:760px){.dd{grid-template-columns:1fr}}
+.gm{position:relative}
+.gm .img{aspect-ratio:4/3}
+.gm .nv{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;background:var(--paper);color:var(--ink);cursor:pointer;font-size:20px}
+.th{display:flex;gap:6px;padding:8px;overflow-x:auto}
+.th button{border:2px solid transparent;padding:0;width:64px;height:48px;flex:none;cursor:pointer;background:none}
+.th button[aria-current="true"]{border-color:var(--ac)}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.di{padding:22px;display:grid;gap:12px;align-content:start}
+.di h2{font-size:28px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;font-size:14.5px}
+dt{color:var(--mut)}dd{margin:0;font-weight:600}
+.ft{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.ft li{border:1px solid var(--ln);padding:3px 10px;font-size:13px}
+.x{position:absolute;right:8px;top:8px;z-index:3;width:38px;height:38px;border:0;background:var(--ink);color:var(--paper);font-size:20px;cursor:pointer}
+.note{font-size:12.5px;color:var(--mut);margin:0}
+.rv{opacity:0;transform:translateY(12px);animation:up .5s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rv{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="strip"><div class="wrap"><span id="sh"></span><button id="th" type="button" aria-label="Changer de thème">Clair / Sombre</button></div></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#accueil"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 23V12a9 9 0 0 1 18 0v11M9 23v-7a4 4 0 0 1 8 0v7"/></svg><b id="cn"></b></a>
+  <nav aria-label="Navigation principale"><a href="#biens">Nos biens</a><a href="#proprietaires">Confier un bien</a><a href="#agence">L’agence</a><a href="#contact">Contact</a></nav>
+  <a class="btn wa sm" data-wa="g" href="#contact" target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+
+<main id="accueil">
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <p class="eyebrow" id="ey"></p>
+      <h1>Votre prochaine adresse à <span>Niamey</span>, sans détour.</h1>
+      <p class="lead" id="ld"></p>
+      <div class="cta"><button class="btn ac" data-go="vente" type="button">Biens à vendre</button><button class="btn out" data-go="location" type="button">Biens à louer</button></div>
+    </div>
+    <figure class="feat" id="feat"></figure>
+  </div>
+  <div class="zones" id="zones"></div>
+</div>
+
+<section id="biens"><div class="wrap">
+  <div class="sh"><h2>Nos biens</h2><p class="note">Biens d’exemple : remplacés par les véritables annonces de l’agence.</p></div>
+  <div class="bar">
+    <div class="seg" id="seg"><button type="button" data-d="" aria-pressed="true">Tous</button><button type="button" data-d="vente" aria-pressed="false">Vente</button><button type="button" data-d="location" aria-pressed="false">Location</button></div>
+    <select id="fc" aria-label="Type de bien"></select>
+    <select id="fa" aria-label="Quartier"></select>
+    <select id="fs" aria-label="Trier"><option value="">Tri : pertinence</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select>
+    <span class="count" id="ct" aria-live="polite"></span>
+  </div>
+  <div id="list"></div>
+</div></section>
+
+<section id="proprietaires" class="band"><div class="wrap">
+  <h2 style="font-size:clamp(28px,4.4vw,42px)">Vous avez un bien à vendre ou à louer ?</h2>
+  <div class="steps" id="steps"></div>
+  <p style="margin-top:28px"><a class="btn ac" data-wa="o" href="#contact" target="_blank" rel="noopener">Confier mon bien sur WhatsApp</a></p>
+</div></section>
+
+<section id="agence"><div class="wrap about">
+  <div><p class="eyebrow">L’agence</p><h2 style="font-size:clamp(28px,4.4vw,42px);margin-bottom:16px">Une équipe locale, des informations claires.</h2><div id="ab"></div></div>
+  <address id="contact"></address>
+</div></section>
+</main>
+
+<footer><div class="wrap"><p id="ft"></p><p>Site de démonstration : agence, biens, prix et coordonnées sont des exemples à remplacer.</p></div></footer>
+
+<dialog id="dlg" aria-label="Fiche du bien"><div id="db"></div></dialog>
+
+<script>
+/* ===================== CONFIGURATION (à modifier pour chaque agence) ===================== */
+const CONFIG={
+  name:"Sahel Habitat Immobilier",
+  city:"Niamey, Niger",
+  whatsapp:"22798564652",            // numéro WhatsApp international, sans + ni espaces (utilisé par TOUS les boutons)
+  phoneDisplay:"+227 98 56 46 52",   // numéro affiché
+  email:"contact@exemple.ne",
+  address:"Quartier Plateau, Niamey (adresse à renseigner)",
+  hours:"Lundi au samedi, 8h00 – 18h00",
+  mapsQuery:"Plateau Niamey",
+  intro:"Vente, location et conseil immobilier à Niamey. Chaque bien est présenté avec son prix, sa surface et sa localisation, et vous nous écrivez directement sur WhatsApp.",
+  about:["Présentez ici l’histoire de l’agence, ses quartiers de spécialité et ses services : vente, location, gestion, recherche de terrains.","Ce texte est un exemple à remplacer par les informations réelles de l’agence."],
+  steps:[["Vous nous contactez","Un message WhatsApp ou un appel suffit pour décrire votre bien."],["Nous évaluons ensemble","Visite, photos et estimation du prix de vente ou du loyer."],["Nous présentons votre bien","Il apparaît sur ce site et auprès de nos contacts."]]
+};
+/* ===================== BIENS (remplacer les exemples par les vrais biens) =====================
+   photos : liste d’adresses d’images ou d’images intégrées. Vide = visuel indicatif « Photo à ajouter ». */
+const PROPERTIES=[
+ {ref:"EX-001",demo:true,featured:true,title:"Villa familiale avec cour",category:"Villa",deal:"vente",price:120000000,per:"",area:"Koira Kano",place:"Rue à préciser",surface:420,built:210,rooms:4,baths:3,desc:"Exemple de fiche : villa de quatre chambres avec cour intérieure et espace de stationnement. Remplacez ce texte par la description réelle du bien.",features:["Cour intérieure","Climatisation","Stationnement","Gardien"],photos:[]},
+ {ref:"EX-002",demo:true,title:"Appartement F3 au Plateau",category:"Appartement",deal:"location",price:350000,per:"/mois",area:"Plateau",place:"Immeuble à préciser",surface:0,built:95,rooms:2,baths:1,desc:"Exemple de fiche : appartement de trois pièces, proche des commerces et des administrations.",features:["Meublé","Climatisation","Balcon"],photos:[]},
+ {ref:"EX-003",demo:true,title:"Terrain de 400 m²",category:"Terrain",deal:"vente",price:18000000,per:"",area:"Gamkalley",place:"Lotissement à préciser",surface:400,built:0,rooms:0,baths:0,desc:"Exemple de fiche : parcelle plane accessible par route, à confirmer sur place avec l’agence.",features:["Accès route","Terrain plat"],photos:[]},
+ {ref:"EX-004",demo:true,title:"Bureaux de 120 m²",category:"Bureaux",deal:"location",price:800000,per:"/mois",area:"Plateau",place:"Avenue à préciser",surface:0,built:120,rooms:0,baths:2,desc:"Exemple de fiche : plateau de bureaux aménageable pour société, ONG ou cabinet.",features:["Climatisation","Stationnement clients"],photos:[]},
+ {ref:"EX-005",demo:true,title:"Maison de 3 chambres",category:"Maison",deal:"location",price:250000,per:"/mois",area:"Yantala",place:"Rue à préciser",surface:260,built:130,rooms:3,baths:2,desc:"Exemple de fiche : maison familiale avec cour, proche des écoles et du marché.",features:["Cour","Quartier calme"],photos:[]},
+ {ref:"EX-006",demo:true,title:"Maison de 5 pièces",category:"Maison",deal:"vente",price:65000000,per:"",area:"Boukoki",place:"Rue à préciser",surface:300,built:180,rooms:5,baths:2,desc:"Exemple de fiche : maison spacieuse avec possibilité d’extension à étudier avec l’agence.",features:["Double entrée","Extension possible"],photos:[]}
+];
+/* ===================== CODE ===================== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=n=>new Intl.NumberFormat("fr-FR").format(n).replace(/[\u202f\u00a0]/g," ");
+const st={d:"",c:"",a:"",s:""};
+const ART={Villa:"M30 140V84l70-46 70 46v56M88 140v-34h24v34M46 102h22v18H46zM132 102h22v18h-22z",Maison:"M30 140V84l70-46 70 46v56M88 140v-34h24v34M46 102h22v18H46zM132 102h22v18h-22zM140 52V36h14v28",Appartement:"M62 140V28h76v112M62 56h76M62 84h76M62 112h76M100 28v112",Bureaux:"M20 140V68h160v72M20 94h160M52 68v72M100 68v72M148 68v72",Terrain:"M28 126l26-70 100-10 22 80zM28 126l-8 10M54 56l-4-9M154 46l9-6M176 126l9 8"};
+const wa=m=>"https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(m);
+const waProp=p=>wa(`Bonjour, je souhaite obtenir davantage d’informations concernant cette propriété : ${p.title} (réf. ${p.ref}), ${p.area}, ${priceTxt(p)}.`);
+const priceTxt=p=>fmt(p.price)+" FCFA"+p.per;
+const dealTxt=p=>p.deal==="vente"?"À vendre":"À louer";
+const specs=p=>[p.surface&&`Terrain ${p.surface} m²`,p.built&&`Bâti ${p.built} m²`,p.rooms&&`${p.rooms} ch.`,p.baths&&`${p.baths} sdb`].filter(Boolean).join(" · ");
+function media(p,k){
+  const u=p.photos&&p.photos[k||0];
+  const fl=p.demo?'<span class="flag">Exemple</span>':"";
+  if(u)return `<div class="img"><img src="${u}" alt="${p.title}" loading="lazy" decoding="async">${fl}</div>`;
+  return `<div class="img"><svg viewBox="0 0 200 160" role="img" aria-label="Visuel indicatif, photo à ajouter" preserveAspectRatio="xMidYMid meet"><path d="M10 140h180" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="${ART[p.category]||ART.Maison}" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/></svg><span class="cap">Visuel indicatif · photo à ajouter</span>${fl}</div>`;
+}
+function list(){
+  let a=PROPERTIES.filter(p=>(!st.d||p.deal===st.d)&&(!st.c||p.category===st.c)&&(!st.a||p.area===st.a));
+  if(st.s)a=[...a].sort((x,y)=>st.s==="asc"?x.price-y.price:y.price-x.price);
+  $("#ct").textContent=a.length+(a.length>1?" biens":" bien");
+  $("#list").innerHTML=a.length?a.map((p,n)=>`<article class="row rv" style="animation-delay:${n*50}ms"><div>${media(p)}</div><div class="info"><p class="meta">${p.ref} · ${p.category} · ${dealTxt(p)}</p><h3 data-o="${PROPERTIES.indexOf(p)}">${p.title}</h3><p class="where">${p.area} — ${p.place}</p><p class="sp">${specs(p)}</p><div class="foot"><span class="price">${fmt(p.price)} <small>FCFA${p.per}</small></span><span class="acts"><button class="btn out sm" type="button" data-o="${PROPERTIES.indexOf(p)}">Voir la fiche</button><a class="btn wa sm" href="${waProp(p)}" target="_blank" rel="noopener">WhatsApp</a></span></div></div></article>`).join(""):`<p class="empty">Aucun bien ne correspond à cette recherche. Écrivez-nous : nous cherchons pour vous.</p>`;
+}
+function setF(k,v){st[k]=v;if(k==="d")$$("#seg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.d===v));if(k==="c")$("#fc").value=v;if(k==="a")$("#fa").value=v;list()}
+let cur=null,gi=0;
+function gal(){
+  const p=PROPERTIES[cur],n=p.photos.length;
+  $("#gm").innerHTML=media(p,gi)+(n>1?'<button class="nv" style="left:8px" data-nv="-1" aria-label="Photo précédente" type="button">‹</button><button class="nv" style="right:8px" data-nv="1" aria-label="Photo suivante" type="button">›</button>':"");
+  $("#thb").innerHTML=n>1?p.photos.map((u,j)=>`<button type="button" data-j="${j}" aria-current="${j===gi}" aria-label="Photo ${j+1}"><img src="${u}" alt=""></button>`).join(""):"";
+}
+function open(i){
+  cur=i;gi=0;const p=PROPERTIES[i];
+  $("#db").innerHTML=`<div class="dd"><div><div id="gm" class="gm"></div><div class="th" id="thb"></div></div><div class="di"><button class="x" type="button" id="cl" aria-label="Fermer">×</button><p class="meta">${p.ref} · ${p.category} · ${dealTxt(p)}</p><h2>${p.title}</h2><p class="price">${fmt(p.price)} <small>FCFA${p.per}</small></p><dl><dt>Quartier</dt><dd>${p.area}</dd><dt>Localisation</dt><dd>${p.place}</dd>${p.surface?`<dt>Terrain</dt><dd>${p.surface} m²</dd>`:""}${p.built?`<dt>Surface bâtie</dt><dd>${p.built} m²</dd>`:""}${p.rooms?`<dt>Chambres</dt><dd>${p.rooms}</dd>`:""}${p.baths?`<dt>Salles d’eau</dt><dd>${p.baths}</dd>`:""}</dl><p style="margin:0;color:var(--mut)">${p.desc}</p><ul class="ft">${p.features.map(f=>`<li>${f}</li>`).join("")}</ul>${p.demo?'<p class="note">Fiche d’exemple : informations fictives, sans valeur contractuelle.</p>':""}<a class="btn wa" href="${waProp(p)}" target="_blank" rel="noopener">Demander des informations</a><a class="btn out" href="tel:+${CONFIG.whatsapp}">Appeler l’agence</a></div></div>`;
+  gal();$("#dlg").showModal();
+}
+function init(){
+  const C=CONFIG;document.title=C.name+" — Maisons, terrains et locations à "+C.city.split(",")[0];
+  $("#cn").textContent=C.name;$("#sh").textContent=C.hours+" · "+C.phoneDisplay;$("#ey").textContent=C.city;$("#ld").textContent=C.intro;
+  $("#ab").innerHTML=C.about.map(t=>`<p>${t}</p>`).join("");
+  $("#steps").innerHTML=C.steps.map((s,i)=>`<div><b>0${i+1}</b><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+  $("#contact").innerHTML=`<div><small>Adresse</small>${C.address}</div><div><small>Horaires</small>${C.hours}</div><div><small>Téléphone</small><a href="tel:+${C.whatsapp}">${C.phoneDisplay}</a></div><div><small>E-mail</small><a href="mailto:${C.email}">${C.email}</a></div><div><a class="btn out sm" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(C.mapsQuery)}" target="_blank" rel="noopener">Voir sur la carte</a></div>`;
+  $("#ft").textContent="© "+new Date().getFullYear()+" "+C.name+" · "+C.city;
+  $$("[data-wa]").forEach(a=>a.href=wa(a.dataset.wa==="o"?"Bonjour, je souhaite confier mon bien à votre agence. Pouvez-vous me rappeler ?":"Bonjour, je souhaite des informations sur vos biens."));
+  const f=PROPERTIES.find(p=>p.featured)||PROPERTIES[0],fi=PROPERTIES.indexOf(f);
+  $("#feat").innerHTML=`${media(f)}<figcaption><span><b>${f.title}</b><br>${f.area}</span><button class="btn out sm" type="button" data-o="${fi}">Voir la fiche</button></figcaption>`;
+  const cats=[...new Set(PROPERTIES.map(p=>p.category))],areas=[...new Set(PROPERTIES.map(p=>p.area))];
+  $("#fc").innerHTML='<option value="">Tous les types</option>'+cats.map(c=>`<option>${c}</option>`).join("");
+  $("#fa").innerHTML='<option value="">Tous les quartiers</option>'+areas.map(c=>`<option>${c}</option>`).join("");
+  $("#zones").innerHTML="<span>Quartiers</span>"+areas.map(a=>`<button type="button" data-z="${a}">${a} (${PROPERTIES.filter(p=>p.area===a).length})</button>`).join("");
+  document.addEventListener("click",e=>{
+    const t=e.target;let b;
+    if(b=t.closest("[data-o]"))open(+b.dataset.o);
+    else if(b=t.closest("[data-go]")){setF("d",b.dataset.go);$("#biens").scrollIntoView()}
+    else if(b=t.closest("[data-z]")){setF("a",b.dataset.z);$("#biens").scrollIntoView()}
+    else if(b=t.closest("#seg button"))setF("d",b.dataset.d);
+    else if(t.closest("#cl")||t===$("#dlg"))$("#dlg").close();
+    else if(b=t.closest("[data-nv]")){const n=PROPERTIES[cur].photos.length;gi=(gi+ +b.dataset.nv+n)%n;gal()}
+    else if(b=t.closest("[data-j]")){gi=+b.dataset.j;gal()}
+  });
+  $("#fc").onchange=e=>setF("c",e.target.value);$("#fa").onchange=e=>setF("a",e.target.value);$("#fs").onchange=e=>setF("s",e.target.value);
+  $("#th").onclick=()=>{const dark=document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;const nx=dark?"light":"dark";document.documentElement.dataset.theme=nx;try{localStorage.setItem("th",nx)}catch(e){}};
+  try{const s=localStorage.getItem("th");if(s)document.documentElement.dataset.theme=s}catch(e){}
+  const ld={"@context":"https://schema.org","@type":"RealEstateAgent",name:C.name,telephone:C.phoneDisplay,email:C.email,address:C.address,openingHours:C.hours};
+  const sc=document.createElement("script");sc.type="application/ld+json";sc.textContent=JSON.stringify(ld);document.head.appendChild(sc);
+  list();
+}
+init();
+</script>
+</body>
+</html>
