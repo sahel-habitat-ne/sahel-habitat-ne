@@ -57,6 +57,7 @@ nav a:hover{border-color:var(--ac)}
 .img img{width:100%;height:100%;object-fit:cover;display:block}
 .img svg{width:100%;height:100%;display:block;color:var(--ink);opacity:.6}
 .cap{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--mut);letter-spacing:.04em}
+.img img+.cap{background:rgba(15,19,37,.72);color:#fff;left:0;bottom:0;padding:3px 9px}
 .flag{position:absolute;left:0;top:0;background:var(--ink);color:var(--paper);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;font-weight:700}
 .zones{border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:16px 0;display:flex;gap:6px 22px;flex-wrap:wrap;align-items:baseline}
 .zones span{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
@@ -191,14 +192,14 @@ const CONFIG={
   steps:[["Vous nous contactez","Un message WhatsApp ou un appel suffit pour décrire votre bien."],["Nous évaluons ensemble","Visite, photos et estimation du prix de vente ou du loyer."],["Nous présentons votre bien","Il apparaît sur ce site et auprès de nos contacts."]]
 };
 /* ===================== BIENS (remplacer les exemples par les vrais biens) =====================
-   photos : liste d’adresses d’images ou d’images intégrées. Vide = visuel indicatif « Photo à ajouter ». */
+   photos : liste de noms de fichiers d’images placés à côté d’index.html. Vide = visuel indicatif « Photo à ajouter ». */
 const PROPERTIES=[
- {ref:"EX-001",demo:true,featured:true,title:"Villa familiale avec cour",category:"Villa",deal:"vente",price:120000000,per:"",area:"Koira Kano",place:"Rue à préciser",surface:420,built:210,rooms:4,baths:3,desc:"Exemple de fiche : villa de quatre chambres avec cour intérieure et espace de stationnement. Remplacez ce texte par la description réelle du bien.",features:["Cour intérieure","Climatisation","Stationnement","Gardien"],photos:[]},
- {ref:"EX-002",demo:true,title:"Appartement F3 au Plateau",category:"Appartement",deal:"location",price:350000,per:"/mois",area:"Plateau",place:"Immeuble à préciser",surface:0,built:95,rooms:2,baths:1,desc:"Exemple de fiche : appartement de trois pièces, proche des commerces et des administrations.",features:["Meublé","Climatisation","Balcon"],photos:[]},
- {ref:"EX-003",demo:true,title:"Terrain de 400 m²",category:"Terrain",deal:"vente",price:18000000,per:"",area:"Gamkalley",place:"Lotissement à préciser",surface:400,built:0,rooms:0,baths:0,desc:"Exemple de fiche : parcelle plane accessible par route, à confirmer sur place avec l’agence.",features:["Accès route","Terrain plat"],photos:[]},
- {ref:"EX-004",demo:true,title:"Bureaux de 120 m²",category:"Bureaux",deal:"location",price:800000,per:"/mois",area:"Plateau",place:"Avenue à préciser",surface:0,built:120,rooms:0,baths:2,desc:"Exemple de fiche : plateau de bureaux aménageable pour société, ONG ou cabinet.",features:["Climatisation","Stationnement clients"],photos:[]},
- {ref:"EX-005",demo:true,title:"Maison de 3 chambres",category:"Maison",deal:"location",price:250000,per:"/mois",area:"Yantala",place:"Rue à préciser",surface:260,built:130,rooms:3,baths:2,desc:"Exemple de fiche : maison familiale avec cour, proche des écoles et du marché.",features:["Cour","Quartier calme"],photos:[]},
- {ref:"EX-006",demo:true,title:"Maison de 5 pièces",category:"Maison",deal:"vente",price:65000000,per:"",area:"Boukoki",place:"Rue à préciser",surface:300,built:180,rooms:5,baths:2,desc:"Exemple de fiche : maison spacieuse avec possibilité d’extension à étudier avec l’agence.",features:["Double entrée","Extension possible"],photos:[]}
+ {ref:"EX-001",demo:true,featured:true,title:"Villa familiale avec cour",category:"Villa",deal:"vente",price:120000000,per:"",area:"Koira Kano",place:"Rue à préciser",surface:420,built:210,rooms:4,baths:3,desc:"Exemple de fiche : villa de quatre chambres avec cour intérieure et espace de stationnement. Remplacez ce texte par la description réelle du bien.",features:["Cour intérieure","Climatisation","Stationnement","Gardien"],photos:["ex001-1.jpg","ex001-2.jpg"]},
+ {ref:"EX-002",demo:true,title:"Appartement F3 au Plateau",category:"Appartement",deal:"location",price:350000,per:"/mois",area:"Plateau",place:"Immeuble à préciser",surface:0,built:95,rooms:2,baths:1,desc:"Exemple de fiche : appartement de trois pièces, proche des commerces et des administrations.",features:["Meublé","Climatisation","Balcon"],photos:["ex002-1.jpg","ex002-2.jpg"]},
+ {ref:"EX-003",demo:true,title:"Terrain de 400 m²",category:"Terrain",deal:"vente",price:18000000,per:"",area:"Gamkalley",place:"Lotissement à préciser",surface:400,built:0,rooms:0,baths:0,desc:"Exemple de fiche : parcelle plane accessible par route, à confirmer sur place avec l’agence.",features:["Accès route","Terrain plat"],photos:["ex003-1.jpg"]},
+ {ref:"EX-004",demo:true,title:"Bureaux de 120 m²",category:"Bureaux",deal:"location",price:800000,per:"/mois",area:"Plateau",place:"Avenue à préciser",surface:0,built:120,rooms:0,baths:2,desc:"Exemple de fiche : plateau de bureaux aménageable pour société, ONG ou cabinet.",features:["Climatisation","Stationnement clients"],photos:["ex004-1.jpg","ex004-2.jpg"]},
+ {ref:"EX-005",demo:true,title:"Maison de 3 chambres",category:"Maison",deal:"location",price:250000,per:"/mois",area:"Yantala",place:"Rue à préciser",surface:260,built:130,rooms:3,baths:2,desc:"Exemple de fiche : maison familiale avec cour, proche des écoles et du marché.",features:["Cour","Quartier calme"],photos:["ex005-1.jpg","ex005-2.jpg"]},
+ {ref:"EX-006",demo:true,title:"Maison de 5 pièces",category:"Maison",deal:"vente",price:65000000,per:"",area:"Boukoki",place:"Rue à préciser",surface:300,built:180,rooms:5,baths:2,desc:"Exemple de fiche : maison spacieuse avec possibilité d’extension à étudier avec l’agence.",features:["Double entrée","Extension possible"],photos:["ex006-1.jpg","ex006-2.jpg"]}
 ];
 /* ===================== CODE ===================== */
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -213,7 +214,7 @@ const specs=p=>[p.surface&&`Terrain ${p.surface} m²`,p.built&&`Bâti ${p.built}
 function media(p,k){
   const u=p.photos&&p.photos[k||0];
   const fl=p.demo?'<span class="flag">Exemple</span>':"";
-  if(u)return `<div class="img"><img src="${u}" alt="${p.title}" loading="lazy" decoding="async">${fl}</div>`;
+  if(u)return `<div class="img"><img src="${u}" alt="${p.title}${p.demo?" (photo d’illustration)":""}" loading="lazy" decoding="async">${p.demo?'<span class="cap">Photo d’illustration</span>':""}${fl}</div>`;
   return `<div class="img"><svg viewBox="0 0 200 160" role="img" aria-label="Visuel indicatif, photo à ajouter" preserveAspectRatio="xMidYMid meet"><path d="M10 140h180" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="${ART[p.category]||ART.Maison}" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/></svg><span class="cap">Visuel indicatif · photo à ajouter</span>${fl}</div>`;
 }
 function list(){
